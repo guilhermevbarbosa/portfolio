@@ -1,9 +1,9 @@
-import { CiLinkedin } from "react-icons/ci";
-import { FiGithub } from "react-icons/fi";
-
 import '../../assets/scss/PortfolioAreas/Home.scss';
+import icons from '../../variables/IconsImport';
 
 const Home = () => {
+    const { github: GithubIcon, linkedin: LinkedinIcon } = icons;
+
     return (
         <section className="home">
             <div className="pic-area">
@@ -15,11 +15,11 @@ const Home = () => {
 
                     <div className="social-links">
                         <a title="Linkedin link" href="https://www.linkedin.com/in/guilhermevbarbosa/" target="_blank" rel="noopener noreferrer">
-                            <CiLinkedin />
+                            <LinkedinIcon />
                         </a>
 
                         <a title="Github link" href="https://github.com/guilhermevbarbosa" target="_blank" rel="noopener noreferrer">
-                            <FiGithub />
+                            <GithubIcon />
                         </a>
                     </div>
                 </div>

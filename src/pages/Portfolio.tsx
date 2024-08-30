@@ -1,4 +1,4 @@
-import About from "./PortfolioAreas/About"
+import About from "./About"
 import Home from "./PortfolioAreas/Home"
 
 const Portfolio = () => {

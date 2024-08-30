@@ -1,0 +1,23 @@
+@import "../variables.scss";
+
+.skill {
+  padding: 20px;
+  background-color: $floral-white;
+  border-radius: 4px;
+  box-shadow: $b-shadow;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+
+  svg {
+    font-size: toRem(40);
+  }
+
+  .skill-title {
+    @extend %poppins-semibold;
+    color: $purple-dark-v2;
+  }
+}
