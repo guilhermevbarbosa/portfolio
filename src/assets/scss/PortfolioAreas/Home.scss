@@ -1,0 +1,92 @@
+@import "../variables.scss";
+
+.home {
+  @extend %gradient;
+  height: 100vh;
+  position: relative;
+
+  @media (max-width: 630px) {
+    padding: 0 20px;
+  }
+
+  .scroll-animation {
+    background-image: url("../../images/scroll.gif");
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    margin: 0 auto;
+  }
+
+  .pic-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100%;
+
+    .profile-pic {
+      background-image: url("../../images/profile-pic.png");
+      background-size: contain;
+      width: 200px;
+      height: 200px;
+      z-index: 1;
+    }
+
+    .profile-details {
+      max-width: 600px;
+      background-color: $purple-dark-v2;
+      padding: 40px 40px 12px;
+      border-radius: 30px;
+      margin-top: -30px;
+      box-shadow: $b-shadow;
+
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      gap: 5px;
+
+      @media (max-width: 630px) {
+        max-width: none;
+      }
+
+      .name {
+        color: $floral-white;
+        font-size: toRem(30);
+        @extend %poppins-bold;
+
+        @media (max-width: 630px) {
+          font-size: toRem(20);
+        }
+      }
+
+      .area-text {
+        color: $floral-white;
+        font-size: toRem(16);
+        @extend %poppins-light;
+      }
+
+      .social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-top: 10px;
+
+        a {
+          text-decoration: none;
+
+          svg {
+            font-size: toRem(36);
+            color: $floral-white;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,45 +1,52 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-}
+@import "./assets/scss/reset.scss";
+@import "./assets/scss/variables.scss";
 
 body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
+  @extend %poppins;
 
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
+  .title {
+    margin-bottom: 30px;
 
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
+    h2 {
+      @include section-title;
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
+      @media (max-width: 630px) {
+        @include section-title(toRem(20));
+      }
+    }
 
-#root,
-#__next {
-  isolation: isolate;
+    h3 {
+      @include section-title(toRem(20));
+    }
+  }
+
+  .text {
+    @extend %poppins-extralight;
+    line-height: toRem(22);
+    color: $floral-white;
+  }
+
+  .subsection {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 50px;
+  }
+
+  .container-limiter {
+    max-width: 850px;
+    margin: 0 auto;
+
+    @media (max-width: 900px) {
+      max-width: 700px;
+    }
+
+    @media (max-width: 767px) {
+      max-width: none;
+      padding: 0 20px;
+    }
+  }
+
+  .about {
+    @extend %gradient-v1;
+  }
 }

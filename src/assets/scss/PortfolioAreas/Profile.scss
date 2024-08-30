@@ -1,0 +1,43 @@
+@import "../variables.scss";
+
+.profile {
+  .bio-text {
+    align-self: flex-start;
+
+    p {
+      max-width: 90%;
+
+      & + p:not(:last-child) {
+        margin-bottom: 15px;
+      }
+
+      &:first-child:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+
+    .contact {
+      margin-bottom: 40px;
+
+      span {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        margin-bottom: 10px;
+        width: fit-content;
+
+        svg {
+          font-size: toRem(25);
+        }
+
+        a {
+          text-decoration: none;
+          color: $floral-white;
+          @extend %poppins-bold;
+          font-size: toRem(16);
+        }
+      }
+    }
+  }
+}
