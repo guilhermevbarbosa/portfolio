@@ -1,0 +1,15 @@
+@import "../variables.scss";
+
+footer {
+  background: $purple-dark-v1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+
+  p {
+    font-size: toRem(10);
+    color: $floral-white;
+    font-weight: 200;
+  }
+}
