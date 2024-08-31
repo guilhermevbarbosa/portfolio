@@ -5,7 +5,3 @@ export type Icon = {
     color: string
 }
 
-export type Skill = {
-    icon: Icon,
-    skillName: string
-}

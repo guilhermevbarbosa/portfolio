@@ -1,7 +1,7 @@
 import "../../assets/scss/PortfolioAreas/Habilities.scss";
 
 import SkillCard from "../../components/SkillCard";
-import { Skill } from "../../types/Icon";
+import { Skill } from "../../types/Skill";
 import Colors from "../../variables/Colors";
 import icons from "../../variables/IconsImport";
 
@@ -54,7 +54,7 @@ const skills: Skill[] = [
 
 const Habilities = () => {
     return (
-        <div className="subsection">
+        <section className="mod-section">
             <div className="title align-center">
                 <h3>Habilidades</h3>
             </div>
@@ -69,7 +69,7 @@ const Habilities = () => {
                     ))}
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

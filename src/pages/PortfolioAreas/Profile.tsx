@@ -10,7 +10,7 @@ const Profile = () => {
                 <h2>Sobre</h2>
             </div>
 
-            <div className="subsection">
+            <div className="mod-section">
                 <div className="bio-text">
                     <p className="text">
                         Olá! Meu nome é Guilherme, tenho <span id="age"></span> anos e

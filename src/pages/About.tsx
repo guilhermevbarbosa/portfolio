@@ -1,3 +1,4 @@
+import Experiences from "./PortfolioAreas/Experiences"
 import Habilities from "./PortfolioAreas/Habilities"
 import Profile from "./PortfolioAreas/Profile"
 
@@ -7,6 +8,7 @@ const About = () => {
             <div className="container-limiter">
                 <Profile />
                 <Habilities />
+                <Experiences />
             </div>
         </div>
     )

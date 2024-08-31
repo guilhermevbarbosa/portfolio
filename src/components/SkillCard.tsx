@@ -1,5 +1,5 @@
 import "../assets/scss/components/SkillCard.scss";
-import { Skill } from "../types/Icon";
+import { Skill } from "../types/Skill";
 
 const SkillCard = ({ icon, skillName }: Skill) => {
     const { name: Icon, color } = icon;
