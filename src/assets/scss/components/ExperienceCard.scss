@@ -1,14 +1,16 @@
-@import "../variables.scss";
+@import "../colors-gradients.scss";
+@import "../utilities.scss";
+@import "../fonts.scss";
 
 .experience {
   position: relative;
   display: flex;
   gap: 20px;
 
-  background-color: white;
+  background-color: var(--white);
   border-radius: 4px;
   padding: 20px;
-  box-shadow: $b-shadow;
+  box-shadow: var(--b-shadow);
 
   &::before {
     content: "";

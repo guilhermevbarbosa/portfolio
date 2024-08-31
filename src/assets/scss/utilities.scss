@@ -1,0 +1,20 @@
+@mixin section-title($font-size: toRem(40)) {
+  font-size: $font-size;
+  color: var(--floral-white);
+  @extend %poppins-light;
+  width: fit-content;
+
+  &::after {
+    content: "";
+    height: 2px;
+    width: 60%;
+    display: block;
+    background: var(--floral-white);
+    margin-top: 10px;
+  }
+}
+
+@function toRem($value) {
+  $remValue: calc($value / 16) + rem;
+  @return $remValue;
+}

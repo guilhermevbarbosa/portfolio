@@ -1,5 +1,8 @@
 @import "./assets/scss/reset.scss";
 @import "./assets/scss/variables.scss";
+@import "./assets/scss/colors-gradients.scss";
+@import "./assets/scss/fonts.scss";
+@import "./assets/scss/utilities.scss";
 
 body {
   @extend %poppins;
@@ -23,7 +26,7 @@ body {
   .text {
     @extend %poppins-extralight;
     line-height: toRem(22);
-    color: $floral-white;
+    color: var(--floral-white);
   }
 
   .mod-section {

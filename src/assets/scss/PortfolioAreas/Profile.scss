@@ -1,4 +1,5 @@
-@import "../variables.scss";
+@import "../fonts.scss";
+@import "../utilities.scss";
 
 .profile {
   .bio-text {
@@ -33,7 +34,7 @@
 
         a {
           text-decoration: none;
-          color: $floral-white;
+          color: var(--floral-white);
           @extend %poppins-bold;
           font-size: toRem(16);
         }

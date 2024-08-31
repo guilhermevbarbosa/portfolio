@@ -1,7 +1,7 @@
-@import "../variables.scss";
+@import "../utilities.scss";
 
 footer {
-  background: $purple-dark-v1;
+  background: var(--purple-dark-v1);
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -9,7 +9,7 @@ footer {
 
   p {
     font-size: toRem(10);
-    color: $floral-white;
+    color: var(--floral-white);
     font-weight: 200;
   }
 }
