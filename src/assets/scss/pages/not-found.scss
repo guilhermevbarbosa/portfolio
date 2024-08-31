@@ -1,0 +1,23 @@
+@import "../utilities.scss";
+@import "../fonts.scss";
+
+.not-found {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: toRem(80);
+    @extend %poppins-black;
+    color: var(--floral-white);
+  }
+
+  p {
+    font-size: toRem(20);
+    @extend %poppins-light;
+    margin-top: -30px;
+    color: var(--floral-white);
+  }
+}

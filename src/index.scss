@@ -49,7 +49,8 @@ body {
     }
   }
 
-  .about {
+  .about,
+  .not-found {
     @extend %gradient-v1;
   }
 }
