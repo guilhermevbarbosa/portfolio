@@ -15,7 +15,7 @@ export class TimeCalculator {
         return age;
     }
 
-    static calcularPeriodo(startDate: string, endDate: string) {
+    static calculatePeriod(startDate: string, endDate: string) {
         const start = new Date(startDate);
         const end = new Date(endDate);
 
@@ -25,7 +25,6 @@ export class TimeCalculator {
         dateDifference -= anos * 1000 * 3600 * 24 * 365.25;
 
         const meses = Math.floor(dateDifference / (1000 * 3600 * 24 * 30.44));
-
         let period = "";
 
         if (anos > 0) {
@@ -40,6 +39,12 @@ export class TimeCalculator {
             if (meses > 1) period += "es";
         }
 
+        if (!anos && meses === 0) period += '1 mês';
+
         return period;
+    }
+
+    static formatDate(date: string | Date) {
+        return new Date(date).toISOString().split('T')[0];
     }
 }

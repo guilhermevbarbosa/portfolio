@@ -1,20 +1,23 @@
 import ExperienceCard from "../../components/ExperienceCard";
 import { Experience } from "../../types/Experience";
+import { TimeCalculator } from "../../static/TimeCalculator";
+
+import ExperiencesTime from "../../variables/ExperiencesTime";
 import "../../assets/scss/PortfolioAreas/Experiences.scss";
 
 const experiences: Experience[] = [
-    {
-        companyClass: 'gft',
-        companyName: 'GFT',
-        xpArea: 'Desenvolvedor Front-end',
-        xpDescription: 'Desenvolvedor Front-end atuando terceirizado em projetos de desenvolvimento web para o Bradesco.',
-        xpTime: 'ago de 2024 - o momento'
-    },
-    {
-        companyClass: 'frt',
-        companyName: 'fri.to/frt',
-        xpArea: 'Desenvolvedor Front-end',
-        xpDescription: ` <p>
+  {
+    companyClass: 'gft',
+    companyName: 'GFT',
+    xpArea: 'Desenvolvedor Front-end',
+    xpDescription: 'Desenvolvedor Front-end atuando terceirizado em projetos de desenvolvimento web para o Bradesco.',
+    xpTime: `ago de 2024 - o momento - ${TimeCalculator.calculatePeriod(ExperiencesTime.gftTime.init, ExperiencesTime.gftTime.end)}`,
+  },
+  {
+    companyClass: 'frt',
+    companyName: 'fri.to/frt',
+    xpArea: 'Desenvolvedor Front-end',
+    xpDescription: `<p>
                         Desenvolvedor Front-end atuando terceirizado em projetos
                         de desenvolvimento web para o Bradesco. Atuação com
                         JavaScript, Typescript, HTML, SCSS, Angular e Storybook
@@ -48,14 +51,13 @@ const experiences: Experience[] = [
                         <a target="_blank" href="https://fri.to">Fri.to</a> e
                         <a target="_blank" href="https://frt.digital/">FRT</a>.
                       </p>`,
-        xpTime: 'set de 2019 - ago de 2024 - 4 anos e 11 meses'
-    },
-    {
-        companyClass: 'senac',
-        companyName: 'Senac',
-        xpArea: 'Desenvolvedor Front-end',
-        xpDescription: `
-        <p>
+    xpTime: `set de 2019 - ago de 2024 - ${TimeCalculator.calculatePeriod(ExperiencesTime.frtTime.init, ExperiencesTime.frtTime.end)}`
+  },
+  {
+    companyClass: 'senac',
+    companyName: 'Senac',
+    xpArea: 'Desenvolvedor Front-end',
+    xpDescription: `<p>
                         Desenvolvimento de aplicações web em HTML, CSS, Ionic,
                         JavaScript, Angular e Java Spring.
                       </p>
@@ -79,32 +81,32 @@ const experiences: Experience[] = [
                         Participação no desenvolvimento de uma plataforma de
                         eventos francesa utilizando Angular 5, Ionic 3.
                       </p>`,
-        xpTime: 'set de 2017 - set de 2019 - 2 anos'
-    },
+    xpTime: `set de 2017 - set de 2019 - ${TimeCalculator.calculatePeriod(ExperiencesTime.senacTime.init, ExperiencesTime.senacTime.end)}`
+  },
 ]
 
 const Experiences = () => {
-    return (
-        <section className="mod-section">
-            <div className="title align-center">
-                <h3>Experiências</h3>
-            </div>
+  return (
+    <section className="mod-section">
+      <div className="title align-center">
+        <h3>Experiências</h3>
+      </div>
 
-            <div className="experiences cards-data">
-                <div className="container">
-                    {experiences.map((xp) => (
-                        <ExperienceCard
-                            key={crypto.randomUUID()}
-                            companyClass={xp.companyClass}
-                            companyName={xp.companyName}
-                            xpArea={xp.xpArea}
-                            xpDescription={xp.xpDescription}
-                            xpTime={xp.xpTime} />
-                    ))}
-                </div>
-            </div>
-        </section>
-    )
+      <div className="experiences cards-data">
+        <div className="container">
+          {experiences.map((xp) => (
+            <ExperienceCard
+              key={crypto.randomUUID()}
+              companyClass={xp.companyClass}
+              companyName={xp.companyName}
+              xpArea={xp.xpArea}
+              xpDescription={xp.xpDescription}
+              xpTime={xp.xpTime} />
+          ))}
+        </div>
+      </div>
+    </section>
+  )
 }
 
 export default Experiences
