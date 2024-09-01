@@ -4,8 +4,19 @@
 @import "./assets/scss/fonts.scss";
 @import "./assets/scss/utilities.scss";
 
+.about,
+.home,
+.container-limiter,
+.subsection {
+  @media (max-width: 700px) {
+    overflow: hidden;
+  }
+}
+
 body {
   @extend %poppins;
+
+  overflow-x: hidden;
 
   .title {
     margin-bottom: 30px;

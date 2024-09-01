@@ -6,7 +6,7 @@ const Home = () => {
 
     return (
         <section className="home">
-            <div className="pic-area">
+            <div data-aos="fade-right" className="pic-area">
                 <div className="profile-pic"></div>
 
                 <div className="profile-details">

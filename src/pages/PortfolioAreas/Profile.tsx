@@ -6,12 +6,16 @@ const Profile = () => {
 
     return (
         <section className="profile">
-            <div className="title">
+            <div data-aos="fade-right"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="500" className="title">
                 <h2>Sobre</h2>
             </div>
 
             <div className="mod-section">
-                <div className="bio-text">
+                <div data-aos="fade-right"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="500" className="bio-text">
                     <p className="text">
                         Olá! Meu nome é Guilherme, tenho <span id="age"></span> anos e
                         moro em São Paulo.

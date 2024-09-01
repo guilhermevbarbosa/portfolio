@@ -3,7 +3,9 @@ import { Experience } from "../types/Experience";
 
 const ExperienceCard = ({ companyClass, xpArea, companyName, xpTime, xpDescription }: Experience) => {
     return (
-        <div className={`experience ${companyClass}`}>
+        <div data-aos="zoom-out"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="500" className={`experience ${companyClass}`}>
             <div className="brand-area">
                 <em className={`${companyClass}-logo`}></em>
                 {companyClass === 'frt' &&
