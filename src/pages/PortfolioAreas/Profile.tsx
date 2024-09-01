@@ -1,8 +1,10 @@
 import "../../assets/scss/PortfolioAreas/Profile.scss";
+import { TimeCalculator } from "../../static/TimeCalculator";
 import icons from "../../variables/IconsImport";
 
 const Profile = () => {
     const { email: Email, linkedin: Linkedin, whatsapp: Whatsapp } = icons;
+    const age = TimeCalculator.calculateAge('1999-02-18');
 
     return (
         <section className="profile">
@@ -17,7 +19,7 @@ const Profile = () => {
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="500" className="bio-text">
                     <p className="text">
-                        Olá! Meu nome é Guilherme, tenho <span id="age"></span> anos e
+                        Olá! Meu nome é Guilherme, tenho {age} anos e
                         moro em São Paulo.
                     </p>
 
