@@ -56,23 +56,23 @@
       background-repeat: no-repeat;
 
       &.gft-logo {
-        background-image: url(../src/assets/images/gft.jpg);
+        background-image: url("../../images/gft.jpg");
       }
 
       &.frt-logo {
-        background-image: url(../src/assets/images/frt.jpeg);
+        background-image: url("../../images/frt.jpeg");
       }
 
       &.frito-logo {
-        background-image: url(../src/assets/images/frito.jpeg);
+        background-image: url("../../images/frito.jpeg");
       }
 
       &.senac-logo {
-        background-image: url(../src/assets/images/senac.jpeg);
+        background-image: url("../../images/senac.jpeg");
       }
 
       &.descomplica-logo {
-        background-image: url(../src/assets/images/descomplica.jpeg);
+        background-image: url("../../images/descomplica.jpeg");
       }
     }
   }
