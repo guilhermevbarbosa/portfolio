@@ -1,4 +1,4 @@
-import Certifications from "./PortfolioAreas/certifications"
+import Certifications from "./PortfolioAreas/Certifications"
 import Education from "./PortfolioAreas/Education"
 import Experiences from "./PortfolioAreas/Experiences"
 import Habilities from "./PortfolioAreas/Habilities"
