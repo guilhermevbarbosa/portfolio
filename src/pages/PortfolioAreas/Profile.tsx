@@ -1,4 +1,5 @@
 import "../../assets/scss/PortfolioAreas/Profile.scss";
+
 import { TimeCalculator } from "../../static/TimeCalculator";
 import icons from "../../variables/IconsImport";
 
@@ -30,9 +31,8 @@ const Profile = () => {
                     </p>
 
                     <p className="text">
-                        Atuo como desenvolvedor web com JavaScript, Typescript, SCSS, CSS,
-                        Angular e Storybook para desenvolver landing pages, sites,
-                        sistemas e bibliotecas responsivas.
+                        Especialista em front‑end, atuo como desenvolvedor web com foco em aplicações escaláveis e design systems.
+                        Além da experiência em JavaScript, Angular e Storybook, possuo certificação AWS Cloud Practitioner, que reforça meu conhecimento em soluções de nuvem e arquitetura moderna.
                     </p>
 
                     <div className="contact">

@@ -20,5 +20,6 @@
   .skill-title {
     @extend %poppins-semibold;
     color: var(--purple-dark-v2);
+    text-align: center;
   }
 }

@@ -1,40 +1,14 @@
 %gradient {
-  background: hsla(302, 82%, 76%, 1);
-  background: linear-gradient(
-    90deg,
-    hsla(254, 31%, 27%, 1) 0%,
-    hsla(258, 40%, 68%, 1) 100%
-  );
-  background: -moz-linear-gradient(
-    90deg,
-    hsla(254, 31%, 27%, 1) 0%,
-    hsla(258, 40%, 68%, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    hsla(254, 31%, 27%, 1) 0%,
-    hsla(258, 40%, 68%, 1) 100%
-  );
+  background: #141e30;
+  background: -webkit-linear-gradient(to top, #243b55, #141e30);
+  background: linear-gradient(to top, #243b55, #141e30);
 }
 
 %gradient-v1 {
-  background: rgb(47, 25, 95);
-  background: -moz-linear-gradient(
-    0deg,
-    rgba(47, 25, 95, 1) 30%,
-    rgba(57, 47, 90, 1) 68%
-  );
-  background: -webkit-linear-gradient(
-    0deg,
-    rgba(47, 25, 95, 1) 30%,
-    rgba(57, 47, 90, 1) 68%
-  );
-  background: linear-gradient(
-    0deg,
-    rgba(47, 25, 95, 1) 30%,
-    rgba(57, 47, 90, 1) 68%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f195f",endColorstr="#392f5a",GradientType=1);
+  background: #141e30;
+  background: -moz-linear-gradient(to bottom, #243b55, #141e30);
+  background: -webkit-linear-gradient(to bottom, #243b55, #141e30);
+  background: linear-gradient(to bottom, #243b55, #141e30);
 }
 
 %gft-gradient {

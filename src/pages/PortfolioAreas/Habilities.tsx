@@ -50,6 +50,10 @@ const skills: Skill[] = [
         icon: { name: icons.github, color: Colors.skills.github },
         skillName: 'GitHub'
     },
+    {
+        icon: { name: icons.aws, color: Colors.skills.aws },
+        skillName: 'AWS - Amazon Web Services'
+    },
 ]
 
 const Habilities = () => {

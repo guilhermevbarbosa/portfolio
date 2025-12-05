@@ -1,16 +1,18 @@
-import ExperienceCard from "../../components/ExperienceCard";
-import { Experience } from "../../types/Experience";
-import { TimeCalculator } from "../../static/TimeCalculator";
-
-import ExperiencesTime from "../../variables/ExperiencesTime";
 import "../../assets/scss/PortfolioAreas/Experiences.scss";
+
+import { Experience } from "../../types/Experience";
+import ExperienceCard from "../../components/ExperienceCard";
+import ExperiencesTime from "../../variables/ExperiencesTime";
+import { TimeCalculator } from "../../static/TimeCalculator";
 
 const experiences: Experience[] = [
   {
     companyClass: 'gft',
     companyName: 'GFT',
     xpArea: 'Desenvolvedor Front-end',
-    xpDescription: 'Desenvolvedor Front-end atuando terceirizado em projetos de desenvolvimento web para o Bradesco.',
+    xpDescription: `<p>Desenvolvedor Front‑end atuando terceirizado em projetos estratégicos para o Bradesco, com foco na criação e evolução de jornadas digitais.</p>
+    <p>Responsável pela implementação e manutenção do Design System do Bradesco, garantindo consistência visual e escalabilidade em todo o ecossistema de aplicações.</p>
+    <p>Atuação com Angular, TypeScript, SCSS e Storybook, desenvolvendo componentes reutilizáveis e Web Components.</p>`,
     xpTime: `ago de 2024 - o momento - ${TimeCalculator.calculatePeriod(ExperiencesTime.gftTime.init, ExperiencesTime.gftTime.end)}`,
   },
   {

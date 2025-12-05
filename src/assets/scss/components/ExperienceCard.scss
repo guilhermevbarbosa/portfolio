@@ -2,6 +2,24 @@
 @import "../utilities.scss";
 @import "../fonts.scss";
 
+.experiences {
+  &.certifications {
+    .experience {
+      @media (max-width: 520px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .brand-area {
+        em {
+          width: 150px;
+          height: 150px;
+        }
+      }
+    }
+  }
+}
+
 .experience {
   position: relative;
   display: flex;
@@ -47,6 +65,14 @@
     }
   }
 
+  &.aws-cloud-practitioner,
+  &.aws-cloud-quest,
+  &.aws-partner {
+    &::before {
+      background-color: #ff9900;
+    }
+  }
+
   .brand-area {
     em {
       display: block;
@@ -73,6 +99,18 @@
 
       &.descomplica-logo {
         background-image: url("../../images/descomplica.jpeg");
+      }
+
+      &.aws-cloud-practitioner-logo {
+        background-image: url("../../images/aws-certified-cloud-practitioner.png");
+      }
+
+      &.aws-cloud-quest-logo {
+        background-image: url("../../images/aws-cloud-quest-cloud-practitioner-training-badge.png");
+      }
+
+      &.aws-partner-logo {
+        background-image: url("../../images/aws-partner-technical-accredited-training-badge.png");
       }
     }
   }

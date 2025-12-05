@@ -1,3 +1,4 @@
+import Certifications from "./PortfolioAreas/certifications"
 import Education from "./PortfolioAreas/Education"
 import Experiences from "./PortfolioAreas/Experiences"
 import Habilities from "./PortfolioAreas/Habilities"
@@ -8,6 +9,7 @@ const About = () => {
         <div className="about">
             <div className="container-limiter">
                 <Profile />
+                <Certifications />
                 <Habilities />
                 <Experiences />
                 <Education />
