@@ -1,60 +1,60 @@
 import "../../assets/scss/PortfolioAreas/Habilities.scss";
 
 import SkillCard from "../../components/SkillCard";
-import { Skill } from "../../types/Skill";
+import type { Skill } from "../../types/Skill";
 import Colors from "../../variables/Colors";
 import icons from "../../variables/IconsImport";
 
 const skills: Skill[] = [
     {
         icon: { name: icons.javascript, color: Colors.skills.javascript },
-        skillName: 'JavaScript'
+        skillName: "JavaScript",
     },
     {
         icon: { name: icons.typescript, color: Colors.skills.typescript },
-        skillName: 'TypeScript'
+        skillName: "TypeScript",
     },
     {
         icon: { name: icons.react, color: Colors.skills.react },
-        skillName: 'React'
+        skillName: "React",
     },
     {
         icon: { name: icons.html, color: Colors.skills.html5 },
-        skillName: 'HTML'
+        skillName: "HTML",
     },
     {
         icon: { name: icons.css, color: Colors.skills.css },
-        skillName: 'CSS'
+        skillName: "CSS",
     },
     {
         icon: { name: icons.sass, color: Colors.skills.sass },
-        skillName: 'SCSS'
+        skillName: "SCSS",
     },
     {
         icon: { name: icons.storybook, color: Colors.skills.storybook },
-        skillName: 'Storybook'
+        skillName: "Storybook",
     },
     {
         icon: { name: icons.angular, color: Colors.skills.angular },
-        skillName: 'Angular 2+'
+        skillName: "Angular",
     },
     {
         icon: { name: icons.mysql, color: Colors.skills.mysql },
-        skillName: 'MySQL'
+        skillName: "MySQL",
     },
     {
         icon: { name: icons.git, color: Colors.skills.git },
-        skillName: 'Git'
+        skillName: "Git",
     },
     {
         icon: { name: icons.github, color: Colors.skills.github },
-        skillName: 'GitHub'
+        skillName: "GitHub",
     },
     {
         icon: { name: icons.aws, color: Colors.skills.aws },
-        skillName: 'AWS - Amazon Web Services'
+        skillName: "AWS - Amazon Web Services",
     },
-]
+];
 
 const Habilities = () => {
     return (
@@ -69,12 +69,13 @@ const Habilities = () => {
                         <SkillCard
                             key={crypto.randomUUID()}
                             icon={{ name: item.icon.name, color: item.icon.color }}
-                            skillName={item.skillName} />
+                            skillName={item.skillName}
+                        />
                     ))}
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default Habilities
+export default Habilities;

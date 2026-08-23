@@ -1,16 +1,23 @@
 import "../assets/scss/components/ExperienceCard.scss";
-import { Experience } from "../types/Experience";
+import type { Experience } from "../types/Experience";
 
-const ExperienceCard = ({ companyClass, xpArea, companyName, xpTime, xpDescription }: Experience) => {
+const ExperienceCard = ({
+    companyClass,
+    xpArea,
+    companyName,
+    xpTime,
+    xpDescription,
+}: Experience) => {
     return (
-        <div data-aos="zoom-out"
+        <div
+            data-aos="zoom-out"
             data-aos-easing="ease-out-cubic"
-            data-aos-duration="500" className={`experience ${companyClass}`}>
+            data-aos-duration="500"
+            className={`experience ${companyClass}`}
+        >
             <div className="brand-area">
                 <em className={`${companyClass}-logo`}></em>
-                {companyClass === 'frt' &&
-                    <em className='frito-logo'></em>
-                }
+                {companyClass === "frt" && <em className="frito-logo"></em>}
             </div>
 
             <div className="experience-details">
@@ -26,7 +33,7 @@ const ExperienceCard = ({ companyClass, xpArea, companyName, xpTime, xpDescripti
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default ExperienceCard
+export default ExperienceCard;

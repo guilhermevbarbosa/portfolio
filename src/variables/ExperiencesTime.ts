@@ -1,9 +1,13 @@
 import { TimeCalculator } from "../static/TimeCalculator";
 
 const ExperiencesTime = {
+    bradescoTime: {
+        init: TimeCalculator.formatDate("2026-08-17"),
+        end: TimeCalculator.formatDate(new Date())
+    },
     gftTime: {
         init: TimeCalculator.formatDate("2024-08-08"),
-        end: TimeCalculator.formatDate(new Date())
+        end: TimeCalculator.formatDate("2026-08-14")
     },
     frtTime: {
         init: TimeCalculator.formatDate("2019-09-02"),

@@ -1,24 +1,49 @@
 import "../../assets/scss/PortfolioAreas/Experiences.scss";
 
-import { Experience } from "../../types/Experience";
 import ExperienceCard from "../../components/ExperienceCard";
-import ExperiencesTime from "../../variables/ExperiencesTime";
 import { TimeCalculator } from "../../static/TimeCalculator";
+import type { Experience } from "../../types/Experience";
+import ExperiencesTime from "../../variables/ExperiencesTime";
 
 const experiences: Experience[] = [
   {
-    companyClass: 'gft',
-    companyName: 'GFT',
-    xpArea: 'Desenvolvedor Front-end',
-    xpDescription: `<p>Desenvolvedor Front‑end atuando terceirizado em projetos estratégicos para o Bradesco, com foco na criação e evolução de jornadas digitais.</p>
-    <p>Responsável pela implementação e manutenção do Design System do Bradesco, garantindo consistência visual e escalabilidade em todo o ecossistema de aplicações.</p>
-    <p>Atuação com Angular, TypeScript, SCSS e Storybook, desenvolvendo componentes reutilizáveis e Web Components.</p>`,
-    xpTime: `ago de 2024 - o momento - ${TimeCalculator.calculatePeriod(ExperiencesTime.gftTime.init, ExperiencesTime.gftTime.end)}`,
+    companyClass: "bradesco",
+    companyName: "Bradesco",
+    xpArea: "Engenheiro de Software",
+    xpDescription: `<p>
+                       Atuando em projetos estratégicos do Bradesco, com foco na evolução do Design System Liquid e na construção de jornadas digitais. 
+                      </p>
+
+                      <p>
+                       Responsável pela criação, evolução e manutenção de componentes reutilizáveis, Web Components e interfaces escaláveis, garantindo consistência visual, qualidade e performance em todo o ecossistema de aplicações.
+                      </p>
+
+                      <p>
+                        Atuação com Angular, TypeScript, JavaScript, HTML, SCSS/SASS e Storybook, contribuindo para a padronização, documentação e evolução do ecossistema de componentes do Bradesco.
+                      </p>`,
+    xpTime: `ago de 2026 - o momento - ${TimeCalculator.calculatePeriod(ExperiencesTime.bradescoTime.init, ExperiencesTime.bradescoTime.end)}`,
   },
   {
-    companyClass: 'frt',
-    companyName: 'fri.to/frt',
-    xpArea: 'Desenvolvedor Front-end',
+    companyClass: "gft",
+    companyName: "GFT",
+    xpArea: "Desenvolvedor Front-end",
+    xpDescription: `<p>
+                       Desenvolvedor Front‑end atuando terceirizado em projetos estratégicos para o Bradesco, com foco na criação e evolução de jornadas digitais.
+                      </p>
+
+                      <p>
+                       Responsável pela implementação e manutenção do Design System do Bradesco, garantindo consistência visual e escalabilidade em todo o ecossistema de aplicações.
+                      </p>
+
+                      <p>
+                        Atuação com Angular, TypeScript, SCSS e Storybook, desenvolvendo componentes reutilizáveis e Web Components.
+                      </p>`,
+    xpTime: `ago de 2024 - ago de 2026 - ${TimeCalculator.calculatePeriod(ExperiencesTime.gftTime.init, ExperiencesTime.gftTime.end)}`,
+  },
+  {
+    companyClass: "frt",
+    companyName: "fri.to/frt",
+    xpArea: "Desenvolvedor Front-end",
     xpDescription: `<p>
                         Desenvolvedor Front-end atuando terceirizado em projetos
                         de desenvolvimento web para o Bradesco. Atuação com
@@ -49,16 +74,14 @@ const experiences: Experience[] = [
                         Atuei no desenvolvimento ainda em projetos de landing
                         pages, páginas promocionais e sites de diversas marcas
                         como Fini, Jundiá, Yoki, Nazca Grupy Kids, site
-                        principal da
-                        <a target="_blank" href="https://fri.to">Fri.to</a> e
-                        <a target="_blank" href="https://frt.digital/">FRT</a>.
+                        principal da Fri.to e FRT.
                       </p>`,
-    xpTime: `set de 2019 - ago de 2024 - ${TimeCalculator.calculatePeriod(ExperiencesTime.frtTime.init, ExperiencesTime.frtTime.end)}`
+    xpTime: `set de 2019 - ago de 2024 - ${TimeCalculator.calculatePeriod(ExperiencesTime.frtTime.init, ExperiencesTime.frtTime.end)}`,
   },
   {
-    companyClass: 'senac',
-    companyName: 'Senac',
-    xpArea: 'Desenvolvedor Front-end',
+    companyClass: "senac",
+    companyName: "Senac",
+    xpArea: "Estagiário em desenvolvimento Front-end",
     xpDescription: `<p>
                         Desenvolvimento de aplicações web em HTML, CSS, Ionic,
                         JavaScript, Angular e Java Spring.
@@ -83,9 +106,9 @@ const experiences: Experience[] = [
                         Participação no desenvolvimento de uma plataforma de
                         eventos francesa utilizando Angular 5, Ionic 3.
                       </p>`,
-    xpTime: `set de 2017 - set de 2019 - ${TimeCalculator.calculatePeriod(ExperiencesTime.senacTime.init, ExperiencesTime.senacTime.end)}`
+    xpTime: `set de 2017 - set de 2019 - ${TimeCalculator.calculatePeriod(ExperiencesTime.senacTime.init, ExperiencesTime.senacTime.end)}`,
   },
-]
+];
 
 const Experiences = () => {
   return (
@@ -103,12 +126,13 @@ const Experiences = () => {
               companyName={xp.companyName}
               xpArea={xp.xpArea}
               xpDescription={xp.xpDescription}
-              xpTime={xp.xpTime} />
+              xpTime={xp.xpTime}
+            />
           ))}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Experiences
+export default Experiences;

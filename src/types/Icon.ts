@@ -1,7 +1,6 @@
-import { IconType } from "react-icons";
+import type { IconType } from "react-icons";
 
 export type Icon = {
-    name: IconType;
-    color: string
-}
-
+	name: IconType;
+	color: string;
+};
