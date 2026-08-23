@@ -11,7 +11,7 @@ const Home = () => {
 
                 <div className="profile-details">
                     <p className="name">Guilherme Vinicius Barbosa</p>
-                    <p className="area-text">Desenvolvedor Web | Software Engineer</p>
+                    <p className="area-text">Software Engineer</p>
 
                     <div className="social-links">
                         <a title="Linkedin link" href="https://www.linkedin.com/in/guilhermevbarbosa/" target="_blank" rel="noopener noreferrer">

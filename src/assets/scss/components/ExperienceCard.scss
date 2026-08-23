@@ -41,6 +41,12 @@
     border-bottom-left-radius: 4px;
   }
 
+  &.bradesco {
+    &::before {
+      @extend %bradesco-gradient;
+    }
+  }
+
   &.gft {
     &::before {
       @extend %gft-gradient;
@@ -80,6 +86,10 @@
       height: 50px;
       background-size: contain;
       background-repeat: no-repeat;
+
+      &.bradesco-logo {
+        background-image: url("../../images/bradesco.jpg");
+      }
 
       &.gft-logo {
         background-image: url("../../images/gft.jpg");
@@ -142,7 +152,7 @@
         @extend %poppins-light;
         line-height: toRem(22);
 
-        & + p:not(:last-child) {
+        &+p:not(:last-child) {
           margin-bottom: 15px;
         }
 
